@@ -7,8 +7,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Tweet page in 1024 px and above view."](https://raw.githubusercontent.com/arsala1995/tinyapp/master/docs/Edit_page.png)
-!["Tweet page in smaller view."](https://raw.githubusercontent.com/arsala1995/tinyapp/master/docs/url_page.png)
+!["Tweet page in 1024 px and above view."](https://raw.githubusercontent.com/arsala1995/tweeter/master/docs/Tweeter-full%20screen.png)
+!["Tweet page in smaller view."](https://raw.githubusercontent.com/arsala1995/tweeter/master/docs/tweeter-shortscreen.png)
 
 ## Getting Started
 
