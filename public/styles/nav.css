@@ -1,0 +1,22 @@
+nav {
+
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  height: 120px;
+  background-color: #4056A1;
+  padding-top: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.5em;
+  
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+
+}
+
+span {
+font-family: 'Bungee', cursive;;
+}

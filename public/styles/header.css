@@ -1,0 +1,50 @@
+.header-elements {
+
+  height: 400px;
+  width: 100%;
+  background-color: #d9d2d7;
+  background-image: url("https://www.transparenttextures.com/patterns/small-crackle-bright.png");
+}
+
+
+.Aligner-item--top {
+  display: flex;
+  /* align-self: flex-start; */
+  /* margin-top: 1em; */
+  padding-top: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item--bottom {
+ 
+  display: flex;
+  /* align-self: flex-end; */
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .header-elements {
+    margin-left: 2em;
+    margin-right: 8em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    max-width: 20vw;
+    height: 300px;
+  }
+
+  .header-elements .Aligner-item--top {
+    margin-top: 1em;
+  }
+  .Aligner-item--bottom {
+ 
+    margin-top: auto;
+  }
+
+ 
+
+ 
+  
+}

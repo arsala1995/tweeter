@@ -1,0 +1,59 @@
+
+.new-tweet {
+  width: 100%;
+}
+
+label {
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.counter {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+textarea {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid black;
+  width: 100%;
+}
+  .submission {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .length_error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid red;;
+    border-left: 4px solid red;;
+    border-right: 4px solid red;;
+    border-bottom: 4px solid red;
+    background-color: transparent;
+    color: red;
+    margin-bottom: 1em;
+   display: none;
+  }
+  .empty_error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid red;;
+    border-left: 4px solid red;;
+    border-right: 4px solid red;;
+    border-bottom: 4px solid red;
+    background-color: transparent;
+    color: red;
+    margin-bottom: 1em;
+   display: none;
+  }
+
