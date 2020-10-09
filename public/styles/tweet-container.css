@@ -1,19 +1,6 @@
-/* .Aligner-item--top2 {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-} */
-
-/* .Aligner-item--bottom2 {
- 
-  display: flex;
-  align-self: flex-end;
-  align-items: center;
-  justify-content: center;
-} */
-
 
 .tweet-container {
+  /* editing the tweet contatiner */
   margin-top: 1em;
   margin-bottom: 1em;
   width: 100%;
@@ -38,8 +25,6 @@ box-shadow: 5px 10px gray;
   flex-direction: row;
   width: 100%;
   height: 110px;
- 
-  
 }
 
 .user {
@@ -54,11 +39,10 @@ margin-top: 5px;
 }
 
 .tweet-container header h2 {
-  /* display: flex; */
+  
   width: 100%;
-
   margin-top: 10px;
-  /* justify-content: flex-start; */
+ 
   }
 
 .tweet-given {
@@ -74,23 +58,12 @@ margin-top: 5px;
   background-color: transparent;
   color: transparent;
   }
-/* .emojis {
-  display: flex;
-  justify-content: flex-end;
-  
-} */
+
 .emojis:hover {
   color: blue;
 }
 
-/* textarea {
-  background-color: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 4px solid black;
-  width: 90%;
-} */
+
   .submission2 {
     display: flex;
     margin: 12px auto;

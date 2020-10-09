@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+//will uodate and load new tweet container
   $("#new-tweet").submit(submitTweet);
   loadTweets();
 
@@ -9,27 +9,25 @@ $(document).ready(function () {
 
 const createTweetElement = function (obj) {
 
-
+//function that will overwrite my created html container where it will add new data
   const $tweet = $(' <article class="tweet-container">');
-  
-  
- const $header = $(`<header>
+
+  const $header = $(`<header>
     <img src=${obj["user"]["avatars"]}>
     <h2>${obj["user"]["name"]}</h2>
     <h5 class="user">${obj["user"]["handle"]}</h5>
   </header>`);
 
-
- const $paragraph = $(' <p name="text" class="tweet-given"></p>');
-//  
-$paragraph.text(obj["content"]["text"]);
+  const $paragraph = $(' <p name="text" class="tweet-given"></p>');
+  //  
+  $paragraph.text(obj["content"]["text"]);
 
   const $submission = $(`<div class="submission2">
     <output type="date">${obj["created_at"]}</output>
     <output name="emojis" class="emojis" for="tweet-given"><i class="fas fa-flag"></i> <i class="fas fa-retweet"></i> <i class="fas fa-heart"></i> </output>
   </div>`);
   //------------------------------------------------
-$tweet.append($header).append($paragraph).append($submission);
+  $tweet.append($header).append($paragraph).append($submission);
   return $tweet;
 
 }
@@ -37,20 +35,32 @@ $tweet.append($header).append($paragraph).append($submission);
 const submitTweet = function (event) {
 
   event.preventDefault();
-
+//the tweet that we type in the text field
   const form = $(this);
   const data = form.serialize();
   const valFromText = form.find("textarea").val();
 
   if ((valFromText.length) > 140) {
-
-    // $(".error_words").text("Too long! Please respect the length of 140 characters.")
-    $(".length_error").slideDown({   start: function () {     $(this).css({display: "flex"})} });
+//checks if the text has exceeded the limit
+    $(".length_error").slideDown({
+      start: function () {
+        $(this).css({
+          display: "flex"
+        })
+      }
+    });
   } else if (valFromText.length === 0) {
-   
-    $(".empty_error").slideDown({   start: function () {     $(this).css({display: "flex"})} });
-  
+//checks if there is no text
+    $(".empty_error").slideDown({
+      start: function () {
+        $(this).css({
+          display: "flex"
+        })
+      }
+    });
+
   } else {
+    //if it meets the requirements
     $.ajax({
         type: 'POST',
         url: '/tweets',
