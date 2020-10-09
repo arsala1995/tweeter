@@ -49,5 +49,9 @@ main {
   display: flex;
 padding-right: 1.5em;
 }
+
+.container {
+  width: 70%;
+}
   
 }
