@@ -8,15 +8,16 @@ nav {
   padding-right: 1.5em;
   padding-bottom: 1.5em;
   padding-left: 1.5em;
-  
+
 }
 
 .navbar {
   position: sticky;
   top: 0;
-
+  z-index: 9999;
 }
 
 span {
-font-family: 'Bungee', cursive;;
+  font-family: 'Bungee', cursive;
+  ;
 }
